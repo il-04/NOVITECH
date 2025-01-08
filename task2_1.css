@@ -1,0 +1,50 @@
+body{
+    background-color: rgb(111, 80, 138);
+}
+
+.box{
+    width: 40%;
+    background-color: palevioletred;
+    margin-left: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: xx-large;
+    border: black 5px solid;
+    border-radius: 50px;
+    margin-top: 40px;
+}
+
+.box input{
+    width: 300px;
+    height: 40px;
+    border: black 3px solid;
+    border-radius: 30px;
+}
+
+.box input::placeholder{
+    font-size: larger;
+    color: black;
+    padding-left: 30px;
+}
+
+.box button{
+    width: 100px;
+    height: 40px;
+    background-color:black;
+    color: white;
+    border: white 3px solid;
+    border-radius: 20px;
+}
+
+td{
+    padding-bottom: 30px;
+    padding-left: 20px;
+}
+
+#y{
+    width: 70px;
+    height: 20px;
+}
+
+
