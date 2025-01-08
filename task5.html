@@ -1,1 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+        h2 {
+            color: #4CAF50;
+        }
+        img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin: 20px;
+            border: 2px solid #4CAF50;
+        }
+        input {
+            width: 60%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 0;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            width: 60%; 
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div>  
+        <input type="text" placeholder="Enter Name" id="name">
+        <input type="text" placeholder="Enter img src" id="source">
+        <input type="text" placeholder="Enter Bio" id="bio">
+        <button onclick="updateBio()"><B>Submit</B></button>
+    </div>
+    <div>
+        <h1 id="h1">Name</h1>
+        <img src="https://www.freeiconspng.com/thumbs/no-image-icon/no-image-icon-6.png" alt="" id="src">
+        <h1 id="h2">Bio</h1>
+    </div>
+    <script>
+        function updateBio(){
+            let Name = document.getElementById("name").value;
+            let img = document.getElementById("source").value;
+            let bio = document.getElementById("bio").value;
+            document.getElementById("h1").innerHTML=Name;
+            document.getElementById("src").src=img;
+            document.getElementById("h2").innerHTML=bio;
+        }
+    </script>
+</body>
+</html>
+
 
