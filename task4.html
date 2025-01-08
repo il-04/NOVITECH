@@ -1,1 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        .main h1{
+            margin: 0px;
+        }
+        .main1{
+            width: 100vw;
+            height: 10vh;
+            background-color: brown;
+            position: relative;
+        }
+        .main11{
+            position: absolute;
+            top: 50%;
+            left: 15%;
+            color: white;
+            font-size: larger;
+            transform: translate(-50%,-50%);
+        }
+        .main12{
+            position: absolute;
+            top: 50%;
+            right: 0%;
+            color: white;
+            font-size: larger;
+            transform: translate(-50%,-50%);
+        }
+        .main13{
+            position: absolute;
+            top: 520px;
+            left: 40%;
+            color: white;
+            font-size: small;
+        }
+        .main2{
+            width: 100vw;
+            height: 80vh;
+            position: relative;
+        }
+        .main21{
+            position: absolute;
+            top: 50px;
+            left: 100px;
+            color: white;
+            font-size: larger;
+        }
+        .main22{
+            position: absolute;
+            left: 100px;
+            top: 260px;
+        }
+        #im1{
+            width: 100%;
+            height: 100%;
+        }
+        .main22 button{
+            width: 120px;
+            height: 30px;
+            border-radius: 100px;
+        }
+        .main23{
+            position: absolute;
+            right: 100px;
+            top: 50px;
+        }
+        .main23 img{
+            height: 400px;
+            width: 350px;
+            border-radius: 300px;
+        }
+        .main24{
+            position: absolute;
+            right: 100px;
+            top: 100px;
+            display: none;
+        }
+        .main25{
+            position: absolute;
+            left: 100px;
+            top: 310px;
+        }
+        .main25 img{
+            height: 50px;
+            width: 200px;
+            border-radius: 10px;
+        }
+        .main3{
+            width: 100vw;
+            height: 10vh;
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <div class="main1">
+        <div class="main11">
+            <h1>ILAKKIYA C</h1>
+        </div>
+        <div class="main13">
+            <h1>ilakkiya.26ec@licet.ac.in</h1>
+        </div>
+        <div class="main12">
+            <table>
+                <tr>
+                    <td>
+                        <button><b>home</b></button>
+                        <button><b>Education</b></button>
+                        <button><b>Skills</b></button>
+                        <button><b>Experience</b></button>
+                        <button><b>Contact</b></button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="main2">
+        <img src="https://img.freepik.com/premium-photo/blue-pink-pastel-paper-color-background_1122-4043.jpg" alt="" id="im1">
+        <div class="main21">
+            <h1 id="h1">Hi there,</h1>
+            <h1 id="h2">This is ILAKKIYA C</h1>
+            <h3 id="h3">Software Developer</h3>
+        </div>
+        <div class="main22">
+            <button id="b">About</button>
+        </div>
+        <div class="main23" id="visible">
+            <img src="https://easy-peasy.ai/cdn-cgi/image/quality=80,format=auto,width=700/https://fdczvxmwwjwpwbeeqcth.supabase.co/storage/v1/object/public/images/e48cd8b6-d0dd-4b60-8ef6-ad3aae616a33/38776c76-b716-4cc7-ad29-3b3c6ed41f15.png">
+        </div>
+        <div class="main24" id="hidden">
+            <h1>About:</h1>
+            <h1>Hi, I’m a web developer specializing in JavaScript and HTML.</h1>
+            <h1>I’m currently focused on mastering full-stack development.</h1>
+        </div>
+        <div class="main25">
+            <img src="https://thumbs.dreamstime.com/b/set-popular-social-media-logos-icons-instagram-facebook-twitter-linkedin-element-vector-gray-165659043.jpg">
+        </div>
+    </div>
+    <div class="main3"></div>
+    <script>
+        document.getElementById('b').onclick = function(){
+            document.getElementById("h1").innerHTML="Junior Developer";
+            document.getElementById("h2").innerHTML="Intern at NoviTech";
+            document.getElementById("h3").innerHTML="BE Graduate (ECE)";
+            document.getElementById("b").innerHTML="Back";
+            document.getElementById("visible").style.display='none';
+            document.getElementById("hidden").style.display='block';
+            document.getElementById("hidden").style.fontSize='x-small';
+        }
+    </script>
+</body>
+</html>
+
+
 
