@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <form action="" onsubmit="submit(event)">
+        event.preventDefault(event);
+        <input type="text" placeholder="Name" id="na">
+        <input type="number" placeholder="Number" id="nu">
+        <input type="email" placeholder="Email" id="em">
+        <input type="submit">
+    </form>
+    <script>
+        function submit(event){
+            event.preventDefault(event);
+            let name = document.getElementById("na").value;
+            let number = document.getElementById("nu").value;
+            let email = document.getElementById("em").value;
+            
+            localStorage.setItem("Name",name);
+            localStorage.setItem("Number",number);
+            localStorage.setItem("Email",email);
+
+            function get(event){
+                event.preventDefault();
+                let value=document.getElementById("search").value;
+                let output = localStorage.getItem(value);
+                document.getElementById("value").innerHTML=output;
+                localStorage.clear()            
+            }
+
+        }
+    </script>
+</body>
+</html>
